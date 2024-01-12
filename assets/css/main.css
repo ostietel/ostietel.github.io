@@ -1,11 +1,30 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Readex+Pro");
+
+:root {
+	--color-back-light: #fde0bf;
+	--color-back-strong: #ffd7aa;
+
+	--color-text: #666;
+	--color-cover-title: #333;
+	--color-cover-text: #333;
+	--color-distinction: #ff7300;
+
+	--color-link: #0000c2;
+	--color-link-visited: #000050;
+	--color-link-hover: #00aeff;
+  }
+  
+
 
 /*
 	Prologue by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
 
 /* Reset */
 
@@ -1599,11 +1618,12 @@
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
+		/* font-family: 'Source Sans Pro', sans-serif; */
+		font-family: 'Libre Baskerville', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #333;
+		color: var(--color-text);
 	}
 
 		body.is-loading * {
@@ -1618,7 +1638,7 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Readex Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -1626,14 +1646,15 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Readex Pro', sans-serif;
 		font-weight: 300;
-		color: #666;
+		color: var(--color-text);
 		line-height: 1.5em;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
-		text-decoration: none;
+		/* text-decoration: none; */
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
@@ -1670,8 +1691,7 @@
 	}
 
 	strong, b {
-		font-weight: 300;
-		color: #666;
+		font-weight: 600;
 	}
 
 	em, i {
@@ -1680,17 +1700,21 @@
 
 	a {
 		text-decoration: none;
-		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+		color: var(--color-link);
+		/* border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; */
 		outline: 0;
 	}
 
+		a:visited {
+			color: var(--color-link-visited);
+		}
+
 		a:hover {
-			color: #E27689;
+			color: var(--color-link-hover);
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1937,7 +1961,7 @@
 			table.default th {
 				text-align: left;
 				padding: 0.5em 1em 0.5em 1em;
-				color: #fff;
+				color: var(--color-text);
 				background: #222729 url("images/overlay.png");
 			}
 
@@ -2110,6 +2134,7 @@
 		}
 
 	#nav ul li a {
+		font-family: 'Readex Pro', sans-serif;
 		display: block;
 		padding: 0.5em 1.5em 0.5em 1.5em;
 		color: rgba(255, 255, 255, 0.5);
@@ -2189,7 +2214,7 @@
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
+			/* background-image: url("images/overlay.png"); */
 		}
 
 			#main > section.dark {
@@ -2197,22 +2222,32 @@
 				color: rgba(255, 255, 255, 0.75);
 			}
 
+			#main > section.dark p {
+				color: var(--color-cover-text);
+			}
+
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
-					color: inherit;
+					color: var(--color-cover-title);
 				}
 
 				#main > section.dark strong {
-					color: #fff;
+					color: var(--color-cover-text);
 					border-color: inherit;
 				}
 
 				#main > section.dark a {
-					color: #fff;
+					color: var(--color-link);
 					border-color: inherit;
 				}
 
+					#main > section.dark a:visited {
+						border-bottom-color: rgba(255, 255, 255, 0);
+						color: var(--color-link-visited);
+					}
+
 					#main > section.dark a:hover {
 						border-bottom-color: rgba(255, 255, 255, 0);
+						color: var(--color-link-hover);
 					}
 
 			#main > section.cover {
@@ -2255,15 +2290,19 @@
 			
 
 			#main > section.two {
-				background-color: #ffd7aa;
+				background-color: var(--color-back-strong);
 			}
 
 			#main > section.three {
-				background-color: #fde0bf;
+				background-color: var(--color-back-light);
 			}
 
 			#main > section.four {
 				background-color: #e8edec;
+			}
+
+			#main > section.contact {
+				background-color: var(--color-back-light);
 			}
 
 /* Wide */
@@ -2325,6 +2364,8 @@
 			.container {
 				padding: 0 2em 0 2em;
 			}
+
+
 
 		/* List */
 
@@ -2629,8 +2670,8 @@
 ul.custom
 		{
 			list-style: disc;
-			font-size: 0.85em;
-			line-height: 1.5em;
+			/* font-size: 0.85em;
+			line-height: 1.5em; */
 			padding-left: 1em;
 			text-align: justify;
 		}
@@ -2724,3 +2765,23 @@ ul.custom
 			float: left;
 		}
 		
+
+
+
+.highlight-title {
+	background-color: var(--color-back-strong);
+	padding: .1em .2em;
+	border-radius: .3em .3em .3em .3em;
+}
+
+.highlight-p {
+	display: inline;
+	background-color: var(--color-back-strong);
+	padding: .1em .2em;
+	border-radius: .2em .2em .2em .2em;
+}
+
+.distinction {
+	color: var(--color-distinction);
+	/* font-weight: bold; */
+}

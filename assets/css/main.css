@@ -11,10 +11,10 @@
 	--color-cover-title: #666;
 	--color-cover-text: #666;
 	--color-distinction: #ff7300;
-
-	--color-link: #0000c2;
-	--color-link-visited: #000050;
-	--color-link-hover: #00aeff;
+	
+	--color-link: #0C5179;
+	--color-link-visited: #040232;
+	--color-link-hover: #2b87bd;
   }
   
 
@@ -2108,6 +2108,7 @@
 		margin: 1.75em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
+		text-align: center;
 	}
 
 		#logo h1 {
@@ -2122,7 +2123,7 @@
 			position: relative;
 			display: block;
 			font-size: 0.6em;
-			color: rgba(255, 255, 255, 0.5);
+			color: #666;
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
 		}
@@ -2137,7 +2138,7 @@
 		font-family: 'Readex Pro', sans-serif;
 		display: block;
 		padding: 0.5em 1.5em 0.5em 1.5em;
-		color: rgba(255, 255, 255, 0.5);
+		color: #666;
 		text-decoration: none;
 		outline: 0;
 		border: 0;

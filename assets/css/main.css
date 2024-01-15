@@ -2771,7 +2771,7 @@ ul.custom
 
 .highlight-title {
 	background-color: var(--color-back-strong);
-	padding: .1em .2em;
+	padding: 0 .2em;
 	border-radius: .3em .3em .3em .3em;
 }
 
@@ -2780,6 +2780,8 @@ ul.custom
 	background-color: var(--color-back-strong);
 	padding: .1em .2em;
 	border-radius: .2em .2em .2em .2em;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
 }
 
 .distinction {

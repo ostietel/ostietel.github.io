@@ -2773,6 +2773,8 @@ ul.custom
 	background-color: var(--color-back-strong);
 	padding: 0 .2em;
 	border-radius: .3em .3em .3em .3em;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
 }
 
 .highlight-p {

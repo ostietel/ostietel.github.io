@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Readex+Pro");
+
+#header {display: none;}
+#top {display: none;}
+#contact {display: none;}
+
+
+body {
+    background: #fff;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    line-height: 1.75em;
+    color: var(--color-text);
+}
+
+input, textarea, select {
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 19pt;
+    font-weight: 300;
+    line-height: 1.75em;
+    color: #888;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 300;
+    color: var(--color-text);
+    line-height: 1.5em;
+}
